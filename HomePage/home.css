@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.container{
+    height: 100%;
+    background: url("../Images/Black\ and\ Yellow\ Modern\ Car\ Services\ Poster\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    ;
+}
