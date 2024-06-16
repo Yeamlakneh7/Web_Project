@@ -6,9 +6,91 @@
 }
 
 .container{
+    padding: 20px 20px;
     height: 100%;
     background: url("../Images/Black\ and\ Yellow\ Modern\ Car\ Services\ Poster\ \(1\).png");
     background-repeat: no-repeat;
     background-size: cover;
     ;
+}
+
+.navStyle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+
+
+button {
+    margin-right: 2px;
+    padding: 6px;
+    background-color: gray;
+    color:#fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;    
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    text-decoration: none;
+    font-size:x-large;
+    cursor: pointer;
+}
+
+.fancy-title {
+    margin-top: 35px;
+    font-family: 'Pacifico', cursive;
+    font-size: 38px;
+    color: #ff3317;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  
+.sub-title {
+    margin-bottom: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.describe {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+.aboutUs-div {
+    margin-top: 70px;
+    padding: 20px;
+    
+    width: 60%;
+    max-width: 500px;
+}
+
+.aboutUs {
+    width:fit-content;
+    margin-bottom: 20px;
+    background-color: cornflowerblue;
+    color: #fff;
+}
+
+.service-div {
+    /* float: right; */
+    width: 300px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.service-list {
+    text-decoration: none;
 }
