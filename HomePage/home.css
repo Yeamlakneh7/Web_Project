@@ -5,6 +5,11 @@
     text-align: center;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
 .container{
     padding: 20px 20px;
     height: 100%;
@@ -17,6 +22,7 @@
 .navStyle {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -36,6 +42,10 @@ button {
     cursor: pointer;    
 }
 
+button:hover {    
+    background-color: #e5533d;
+}
+
 .nav-list {
     display: flex;
     flex-direction: row;
@@ -46,11 +56,23 @@ button {
     cursor: pointer;
 }
 
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #ff6347;
+}
+
 .fancy-title {
     margin-top: 35px;
     font-family: 'Pacifico', cursive;
     font-size: 38px;
-    color: #ff3317;
+    color: #ff2217;
     letter-spacing: 2px;
     text-align: center;
   }
@@ -71,18 +93,33 @@ button {
 .aboutUs-div {
     margin-top: 70px;
     padding: 20px;
-    
     width: 60%;
     max-width: 500px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
 }
 
 .aboutUs {
-    width:fit-content;
-    margin-bottom: 20px;
+    max-width: fit-content;
+    margin: 0 auto 20px auto;
     background-color: cornflowerblue;
     color: #fff;
+    align-items: cente;
 }
 
+.aboutUs-div p {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 1;
+    color: #555;
+    
+}
 .service-div {
     /* float: right; */
     width: 300px;
@@ -94,3 +131,8 @@ button {
 .service-list {
     text-decoration: none;
 }
+
+
+.aboutUs-div p:last-child {
+    margin-bottom: 0;
+} 
