@@ -121,15 +121,31 @@ button:hover {
     
 }
 .service-div {
-    /* float: right; */
-    width: 300px;
+    margin: 50px 0 50px 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
     padding: 20px;
     border: 1px solid black;
     border-radius: 4px;
+    background-color: white;
+    color: #e5533d;
+}
+
+.service {
+    color: #e5533d;
 }
 
 .service-list {
+    list-style: none;
     text-decoration: none;
+    margin: 20px;
+    border: #333 solid 1px;
+    padding: 5px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    color: #e5533d;
 }
 
 
@@ -153,4 +169,19 @@ button:hover {
 
 .garage {
     padding: 20px;
+}
+
+.contact {
+    margin: 50px;
+    color: white;
+    
+}
+
+.contact p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
 }
