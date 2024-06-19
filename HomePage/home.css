@@ -69,7 +69,7 @@ button:hover {
 }
 
 .fancy-title {
-    margin-top: 35px;
+    margin-top: 100px;
     font-family: 'Pacifico', cursive;
     font-size: 38px;
     color: #ff2217;
@@ -91,10 +91,10 @@ button:hover {
 }
 
 .aboutUs-div {
-    margin-top: 70px;
+    margin-top: 100px;
     padding: 20px;
     width: 60%;
-    max-width: 500px;
+    max-width: 700px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -115,7 +115,7 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1;
     color: #555;
     
@@ -136,3 +136,21 @@ button:hover {
 .aboutUs-div p:last-child {
     margin-bottom: 0;
 } 
+
+.garages-section {
+    text-align: center;
+    margin-top: 40px;
+    /* background: #f9fafa; */
+    padding: 40px;
+}
+
+.garages-container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 30px;   
+}
+
+.garage {
+    padding: 20px;
+}
