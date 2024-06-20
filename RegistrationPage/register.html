@@ -9,25 +9,26 @@
     <body>
         <div class="wrapper">
             <h2>Registration</h2>
-            <form action="#">
+            <form action="register.php" method="post" novalidate>
             <div class="input-box">
-                <input type="text" placeholder="Enter your name" required>
-            </div>
-            <div class="input-box">
-                <input type="text" placeholder="Enter your email" required>
+                <label for="name">Enter your name:</label>
+                <input type="text" name="name" id="name" required>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Create password" required>
+                <label for="email">Enter your email:</label>
+                <input type="text" name="email" id="email" required>
             </div>
             <div class="input-box">
-                <input type="password" placeholder="Confirm password" required>
+                <label for="password">Enter Password</label>
+                <input type="password" name="password" id="password" required>
             </div>
-            <div class="policy">
-                <input type="checkbox">
-                <h3>I accept all terms & conditions</h3>
+            <div class="input-box">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" required>
             </div>
+           
             <div class="input-box button">
-                <input type="Submit" value="Register Now">
+                <button type="submit" name="submit">Sign Up</button> 
             </div>
             <div class="text">
                 <h3>Already have an account? <a href="../loginPage/login.html">Login now</a></h3>
