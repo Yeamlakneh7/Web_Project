@@ -165,7 +165,7 @@ body{
   color: #fff;
   margin-top: 40px;
 }
-.forms .form-content .button input{
+.forms .form-content .button-box button{
   color: #fff;
   background: #7d2ae8;
   border-radius: 6px;
@@ -173,7 +173,7 @@ body{
   cursor: pointer;
   transition: all 0.4s ease;
 }
-.forms .form-content .button input:hover{
+.forms .form-content .button-box button:hover{
   background: #5b13b9;
 }
 .forms .form-content label{

@@ -78,7 +78,11 @@ form h3{
   background: #4070f4;
   cursor: pointer;
 }
-.input-box.button input:hover{
+.input-box-button button{
+  margin-right: 15px;
+  cursor: pointer;
+}
+.input-box-button button:hover{
   background: #0e4bf1;
 }
 form .text h3{
