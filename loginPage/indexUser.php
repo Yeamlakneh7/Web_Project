@@ -11,7 +11,7 @@
 <body>
     <h1>Home</h1>
     <?php   if (isset($_SESSION["user_id"])):  ?>
-        <p>You are logged in.</p>
+        <p>You are logged in as a User.</p>
         <p><a href="logout.php">Logout</a></p>
     <?php else:  ?>
         <p><a href="login.html">Login</a> or <a href="../RegistrationPage/register.html">Sign up</a></p>
