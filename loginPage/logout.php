@@ -2,5 +2,5 @@
    session_start();
    session_destroy();
 
-   header("Location: indexOwner.php");
+   header("Location: ../homepage/home.html");
    exit;

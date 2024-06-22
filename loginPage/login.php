@@ -12,15 +12,17 @@
             if(password_verify($_POST["password"],$user["password_hash"])){
                 session_start();
                 $_SESSION["user_id"] = $user["id"];
-                header("Location: indexOwner.php");
+                header("Location: g_owner.php");
                 exit;
             }
             else{
-              echo"Please enter a valid password!";
+             
+      echo '<script>alert("PLEASE ENTER A VALID PASSWORD");; window.location.href = "login.html";</script>';
             }
         }
         else{
-          echo"The email doesn't exist.";
+          
+          echo '<script>alert("PLEASE ENTER A VALID EMAIL OR SIGN UP IF YOU DO NOT HAVE AN ACCOUNT!");; window.location.href = "login.html";</script>';
         }
     
   } 
@@ -34,17 +36,20 @@
         if(password_verify($_POST["password"],$user["password_hash"])){
             session_start();
             $_SESSION["user_id"] = $user["id"];
-            header("Location: indexUser.php");
+            header("Location: home.php");
             exit;
         }
         else{
-          echo"Please enter a valid password!";
+          
+
+          echo '<script>alert("ENTER A VALID PASSWORD");; window.location.href = "login.html";</script>';
         }
     }
     else{
-      echo"The email doesn't exist.";
-    }
+      
+      
+      echo '<script>alert("PLEASE ENTER A VALID EMAIL OR SIGN UP IF YOU DO NOT HAVE AN ACCOUNT!");; window.location.href = "login.html";</script>';
 
   }
-}
+}}
 ?>
