@@ -1,0 +1,432 @@
+* {
+  margin: 0px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Example background color */
+  background-attachment: fixed;
+   background-size: cover;
+  /* Prevent horizontal overflow */
+} /* background-color: #120101; */
+
+
+/* Base styles */
+nav {
+  align-items: center;
+  background-color: #120101;
+  /* opacity: 0.7; */
+  padding: 10px ;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+ul li {
+  margin: 0 10px;
+}
+
+ul li img {
+  vertical-align: middle;
+}
+
+/* Hide the menu icon on large screens */
+.menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white; /* white background for dropdown */
+    position: absolute; /* Positioned dropdown absolutely */
+    top: 40px; /* Positioned just below the nav bar */
+    left: 0;
+  }
+
+  ul li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* Show the menu when it's toggled */
+ul.show {
+  display: flex;
+  animation: slideDown 0.3s ease-out; /* Added dropdown animation */
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px); /* Start position slightly above */
+    opacity: 0; /* Start with invisible */
+  }
+  to {
+    transform: translateY(0); /* End position at normal place */
+    opacity: 1; /* End fully visible */
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px; /* Added padding for better click area */
+  display: block; /* Made links block-level for easier clicks */
+}
+/*=======================================*/
+.container {
+  /* padding: 20px 20px;
+  height: 100%; */
+  background: url("car-accessories-with-copy-space.jpg"); 
+   padding: 90px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+.navStyle {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+button {
+  margin-right: 2px;
+  padding: 6px;
+  background-color: gray;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e5533d;
+}
+
+/* .nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+  text-decoration: none;
+  font-size: x-large;
+  cursor: pointer;
+} */
+
+/* .nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+} */
+
+.nav-list a:hover {
+  color: #ff6347;
+}
+
+.fancy-title {
+  margin-top: 100px;
+  font-family: "Pacifico", cursive;
+  font-size: 38px;
+  color: #ff2217;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.sub-title {
+  margin-bottom: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: larger;
+}
+
+.describe {
+  font-family: "Courier New", Courier, monospace;
+  font-size: medium;
+}
+
+.aboutUs-div {
+  margin-top: 100px;
+  padding: 20px;
+  width: 60%;
+  max-width: 700px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.aboutUs {
+  max-width: fit-content;
+  margin: 0 auto 20px auto;
+  color: red;
+  /* color: #25a7aa; */
+  align-items: cente;
+}
+
+.aboutUs-div p {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1;
+  color: black
+}
+.service-div {
+  /* float: right; */
+  width: 300px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.service-list {
+  text-decoration: none;
+}
+
+.aboutUs-div p:last-child {
+  margin-bottom: 0;
+}
+
+.garages-section {
+  text-align: center;
+  margin-top: 40px;
+  /* background: #f9fafa; */
+  padding: 20px;
+}
+
+/* .garages-container {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: auto auto auto;
+  padding: 3px;
+} */
+.garages-container {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: auto auto auto;
+  padding: 3px;
+  background-image: url('2147668494.jpg');
+ 
+  
+}
+
+@media (max-width: 900px) {
+  .garages-container {
+    grid-template-columns: auto;
+  }
+}
+
+
+
+.garage {
+  padding: 20px;
+}
+.button-group {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.button-group.hidden {
+  display: none;
+}
+
+.button-group a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.button-group a:hover {
+  background-color: #f0f0f0;
+}
+/*==============*/
+.moto{
+   background-color: aliceblue;
+    padding: 30px;
+   
+}
+.link{
+text-decoration: none;
+}
+.garage_link1 {
+  background-image: url('6852136_28531.jpg');
+ width: 400px;
+  height: 300px;
+  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.garage_link {
+  /* background-image: url('3437831.jpg'); */
+ width: 400px;
+  height: 300px;
+  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+
+
+.garage_link3 {
+  background-image: url('3437831.jpg');
+ width: 400px;
+  height: 300px;
+  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.garage_link4 {
+  background-image: url('3437831.jpg');
+ width: 400px;
+  height: 300px;
+  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.garage_link5 {
+  background-image: url('3437831.jpg');
+ width: 400px;
+  height: 300px;
+  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.garage_link6 {
+  background-image: url('3437831.jpg');
+ width: 400px;
+  height: 300px;
+  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============CONTACT===========*/
+.main-container {
+  background-color: black;
+  padding: 30px;
+}
+.lower-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 100px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .lower-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*===================================*/
+
+ .hover-text {
+    position: relative;
+    /* display: inline-block; */
+  }
+  
+  .hover-text::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+
+  .hover-text:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: black;
+
+}
+
+
+
+  @media (max-width: 768px) {
+ .garages-container {
+    flex-direction: column;
+  }
+}
