@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Form</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body style="background-image: url('loginPage/form.jpeg');">
+    <h1 style="text-align: center; color: white;">Build/update your garage profile here.</h1>
+    <form id="garage-form" action="save_garage.php" method="POST" enctype="multipart/form-data">
+        <h2>Garage Profile Contents</h2>
+        <label for="about">Give a description about your Garage:</label><br>
+        <textarea name="about" id="about"></textarea><br>
+        <label for="garage-description">Write three themes that best describe your Garage:</label>
+        <div class="three-words">
+            <input type="text" id="word1" name="word1" placeholder="i.e Honesty" required>
+            <input type="text" id="word2" name="word2" placeholder="second term" required>
+            <input type="text" id="word3" name="word3" placeholder="third term" required>
+        </div>
+        <label for="services">Desribe about your garage's booking service:</label>
+        <div class="services">
+            <textarea id="services" name="services" rows="5" required></textarea>
+        </div>
+        <label for="contact">Contact Information:</label>
+        <div class="contact-info">
+            <input type="text" id="g-name" name="g-name" placeholder="Garage Name" required>
+            <input type="text" id="contact-phone" name="contact-phone" placeholder="Phone" required>
+            <input type="email" id="contact-email" name="contact-email" placeholder="Email" required>
+        </div>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" placeholder="Enter your address" required></textarea>
+        <label for="working-hours">Working Hours:</label>
+        <div class="working-hours">
+            <input type="text" id="working-hours" name="working_hours" placeholder="Enter your working hours" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
